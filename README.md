@@ -1,1 +1,1 @@
-# Redux-form_Simple
+# A simple example of Redux-form
