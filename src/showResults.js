@@ -1,7 +1,11 @@
+//Promise构造函数接收一个函数作为参数，接收额外两个函数resolve和reject
+//resolve表示Promise为解决状态，reject表示为拒绝状态
+//setTimeout用于在制定的毫秒数后调用函数
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
-//async
+//async函数返回的是一个Promise对象
 export default (async function showResults(values) {
     //模拟服务器延迟
+    //如果Promise是完成状态，await的结果是完成态的值，反之抛出拒绝值
     await sleep(500);
     //JSON.stringify(value, replacer, space)
     //value指将要序列化成JSON字符串的值
