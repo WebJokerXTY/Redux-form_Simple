@@ -1,6 +1,6 @@
 //Promise构造函数接收一个函数作为参数，接收额外两个函数resolve和reject
 //resolve表示Promise为解决状态，reject表示为拒绝状态
-//setTimeout用于在制定的毫秒数后调用函数
+//setTimeout用于在指定的毫秒数后调用函数
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 //async函数返回的是一个Promise对象
 export default (async function showResults(values) {
